@@ -6,42 +6,39 @@ import java.awt.*;
 
 public class Main {
   public static void main(String[] args) {  
-    World world = new World(300,300);
+    World world = new World(800,800);
 
-    World world2 = new World();
-   
-    World world3 = new World();
-     
     Turtle yertle = new Turtle(world);
 
-    Turtle marc = new Turtle( 400, 800, world);
+    Turtle marc = new Turtle( 200, 400, world);
 
-    Turtle jenny = new Turtle( 400, 800, world);
+    Turtle jenny = new Turtle( 200, 200, world);
 
-    Turtle adam = new Turtle(400, 800, world);
+    Turtle adam = new Turtle(600, 600, world);
     // // Add your code here
-    yertle.setShellColor(Color.green);
+    yertle.setShellColor(Color.black);
+    yertle.setPenColor(Color.green);
     marc.setShellColor(Color.blue);
+    marc.setPenColor(Color.CYAN);
     jenny.setShellColor(Color.pink);
+    jenny.setPenColor(Color.YELLOW);
     adam.setShellColor(Color.RED);
+    adam.setPenColor(Color.ORANGE);
     System.out.println(jenny.getShellColor());
 
-    marc.setPenColor(Color.BLACK);
     yertle.setPenWidth(40);
-    yertle.forward();
-    yertle.turnRight();
-    yertle.forward();
-    yertle.turnRight();
-    yertle.forward();
-    yertle.turnRight();
-    yertle.forward();
-    yertle.turnRight();
-
-    marc.turnToFace(yertle);
+    marc.setPenWidth(30);
+    jenny.setPenWidth(15);
+    adam.setPenWidth(55);
     
-    System.out.print(yertle.getDistance(0, 0));
 
-    marc. polygon(5.0, 100);
+    yertle. polygon(5.0, 100);
+
+    System.out.print(yertle.getName());
+    System.out.print(marc.getName());
+    System.out.print(jenny.getName());
+    System.out.print(adam.getName());
+
   
     // //world.setVisible(true);
 

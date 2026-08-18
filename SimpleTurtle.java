@@ -28,7 +28,7 @@ public class SimpleTurtle
   private static int numTurtles = 0;
   
   /** array of colors to use for the turtles */
-  private static Color[] colorArray = { Color.green, Color.cyan, new Color(204,0,204), Color.gray};
+  private static Color[] colorArray = { Color.green, Color.cyan, Color.yellow, Color.orange};
   
   /** who to notify about changes to this turtle */
   private ModelDisplay modelDisplay = null;
@@ -690,6 +690,20 @@ public class SimpleTurtle
     for(int i =0; i<sides; i++){
       this.forward(size);
       this.turn(360.0/sides);
+    }
+  }
+  public void star(int points, int size){
+    double angle =720/points;
+    for (int i =0; i<points; i++){
+      this.forward(size);
+      this.turn(angle);
+    }
+  }
+  public void circle(int radius){
+    int side = (int) Math.round((2*Math.PI*radius)/36);
+    for (int i =0; i<36; i++){
+      this.forward(36);
+      this.turn(10);
     }
   }
   
