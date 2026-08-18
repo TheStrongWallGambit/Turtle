@@ -14,10 +14,15 @@ public class Main {
      
     Turtle yertle = new Turtle(world);
 
-    Turtle marc = new Turtle( 400, 800, world2);
+    Turtle marc = new Turtle( 400, 800, world);
 
-    Turtle jenny = new Turtle( 400, 800, world3);
+    Turtle jenny = new Turtle( 400, 800, world);
     // // Add your code here
+    yertle.setShellColor(Color.green);
+    System.out.println(jenny.getShellColor());
+
+    marc.setPenColor(Color.BLACK);
+    yertle.setPenWidth(40);
     yertle.forward();
     yertle.turnRight();
     yertle.forward();
@@ -27,6 +32,11 @@ public class Main {
     yertle.forward();
     yertle.turnRight();
 
+    marc.turnToFace(yertle);
+    
+    System.out.print(yertle.getDistance(0, 0));
+
+    marc. polygon(5.0, 100)
   
     // //world.setVisible(true);
 
