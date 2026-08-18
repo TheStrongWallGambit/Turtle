@@ -17,8 +17,13 @@ public class Main {
     Turtle marc = new Turtle( 400, 800, world);
 
     Turtle jenny = new Turtle( 400, 800, world);
+
+    Turtle adam = new Turtle(400, 800, world);
     // // Add your code here
     yertle.setShellColor(Color.green);
+    marc.setShellColor(Color.blue);
+    jenny.setShellColor(Color.pink);
+    adam.setShellColor(Color.RED);
     System.out.println(jenny.getShellColor());
 
     marc.setPenColor(Color.BLACK);
@@ -36,7 +41,7 @@ public class Main {
     
     System.out.print(yertle.getDistance(0, 0));
 
-    marc. polygon(5.0, 100)
+    marc. polygon(5.0, 100);
   
     // //world.setVisible(true);
 

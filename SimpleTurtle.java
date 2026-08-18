@@ -686,7 +686,7 @@ public class SimpleTurtle
     g.drawString(this.toString(),xPos + (int) (width/2),yPos);
   }
 
-  public void polygon(int sides, int size){
+  public void polygon(double sides, int size){
     for(int i =0; i<sides; i++){
       this.forward(size);
       this.turn(360.0/sides);
