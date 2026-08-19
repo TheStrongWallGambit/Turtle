@@ -66,5 +66,38 @@ public class Turtle extends SimpleTurtle
 //     Turtle t1 = new Turtle(earth);
 //     t1.forward();
 //   }
+public void star(int points, int size){
+    double angle =720.0/points;
+    for (int i =0; i<points; i++){
+      this.forward(size);
+      this.turn(angle);
+    }
+  }
+  public void circle(int radius){
+    int side = (int) Math.round((2*Math.PI*radius)/36);
+    for (int i =0; i<36; i++){
+      this.forward(side);
+      this.turn(10);
+    }
+  }
 
+  public void arc(int chord, int degrees) {
+    for (int i = 0; i < degrees / 5; i++) {
+      this.forward(chord);
+      this.turn(5); 
+      }
+  }
+
+  public void heart(int size) {
+    int chord = Math.max(2, (int) Math.round(size / 18.0));
+    int leg = chord * 18;              // must derive leg FROM chord
+    this.turn(90);
+    this.turn(-140);
+    this.forward(leg);
+    arc(chord, 200);
+    this.turn(-120);
+    arc(chord, 200);
+    this.forward(leg);
+
+  }
 } // this } is the end of class Turtle, put all new methods before this
