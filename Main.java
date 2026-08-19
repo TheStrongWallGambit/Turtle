@@ -56,28 +56,28 @@ public class Main {
     System.out.println("Name: " + yertle.getName());
     System.out.println("Color (RGB): (" + yertleColor.getRed() + ", " + yertleColor.getGreen() + ", " + yertleColor.getBlue() + ")");
     System.out.println("Shape drawn: pentagon");
-    System.out.println("Distance from (0,0): ", yertle.getDistance(0, 0));
+    System.out.println("Distance from (0,0): "+ yertle.getDistance(0, 0));
     System.out.println();
 
     Color marcColor = marc.getShellColor();
     System.out.println("Name: " + marc.getName());
     System.out.println("Color (RGB): (" + marcColor.getRed() + ", " + marcColor.getGreen() + ", " + marcColor.getBlue() + ")");
     System.out.println("Shape drawn: circle");
-    System.out.println("Distance from (0,0): ", marc.getDistance(0, 0));
+    System.out.println("Distance from (0,0): "+ marc.getDistance(0, 0));
     System.out.println();
 
     Color jennyColor = jenny.getShellColor();
     System.out.println("Name: " + jenny.getName());
     System.out.println("Color (RGB): (" + jennyColor.getRed() + ", " + jennyColor.getGreen() + ", " + jennyColor.getBlue() + ")");
     System.out.println("Shape drawn: heart");
-    System.out.println("Distance from (0,0): ", jenny.getDistance(0, 0));
+    System.out.println("Distance from (0,0): "+ jenny.getDistance(0, 0));
     System.out.println();
 
     Color adamColor = adam.getShellColor();
     System.out.println("Name: " + adam.getName());
     System.out.println("Color (RGB): (" + adamColor.getRed() + ", " + adamColor.getGreen() + ", " + adamColor.getBlue() + ")");
     System.out.println("Shape drawn: star");
-    System.out.println("Distance from (0,0): ", adam.getDistance(0, 0));
+    System.out.println("Distance from (0,0): "+ adam.getDistance(0, 0));
     System.out.println();
 
   
