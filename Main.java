@@ -20,6 +20,14 @@ public class Main {
     marc.setName("Marc");
     jenny.setName("Jenny"); 
     adam.setName("Adam");
+    yertle.setHeight(30);
+    yertle.setWidth(25);
+    marc.setHeight(45);
+    marc.setWidth(38);
+    jenny.setHeight(20);
+    jenny.setWidth(17);
+    adam.setHeight(55);
+    adam.setWidth(46);
   
     yertle.setShellColor(Color.black);
     yertle.setPenColor(Color.green);
@@ -29,25 +37,48 @@ public class Main {
     jenny.setPenColor(Color.YELLOW);
     adam.setShellColor(Color.RED);
     adam.setPenColor(Color.ORANGE);
-    System.out.println(jenny.getShellColor());
-
-    yertle.setPenWidth(40);
-    marc.setPenWidth(30);
-    jenny.setPenWidth(15);
-    adam.setPenWidth(55);
     
 
-    yertle. polygon(5.0, 100);
+    yertle.setPenWidth(6);
+    marc.setPenWidth(4);
+    jenny.setPenWidth(3);
+    adam.setPenWidth(5);
+    
+
+    yertle.polygon(5.0, 100);
     marc.circle(70); 
     adam.star(5, 110);
     jenny.heart(80);
 
 
 
-    System.out.print(yertle.getName());
-    System.out.print(marc.getName());
-    System.out.print(jenny.getName());
-    System.out.print(adam.getName());
+    Color yertleColor = yertle.getShellColor();
+    System.out.println("Name: " + yertle.getName());
+    System.out.println("Color (RGB): (" + yertleColor.getRed() + ", " + yertleColor.getGreen() + ", " + yertleColor.getBlue() + ")");
+    System.out.println("Shape drawn: pentagon");
+    System.out.println("Distance from (0,0): ", yertle.getDistance(0, 0));
+    System.out.println();
+
+    Color marcColor = marc.getShellColor();
+    System.out.println("Name: " + marc.getName());
+    System.out.println("Color (RGB): (" + marcColor.getRed() + ", " + marcColor.getGreen() + ", " + marcColor.getBlue() + ")");
+    System.out.println("Shape drawn: circle");
+    System.out.println("Distance from (0,0): ", marc.getDistance(0, 0));
+    System.out.println();
+
+    Color jennyColor = jenny.getShellColor();
+    System.out.println("Name: " + jenny.getName());
+    System.out.println("Color (RGB): (" + jennyColor.getRed() + ", " + jennyColor.getGreen() + ", " + jennyColor.getBlue() + ")");
+    System.out.println("Shape drawn: heart");
+    System.out.println("Distance from (0,0): ", jenny.getDistance(0, 0));
+    System.out.println();
+
+    Color adamColor = adam.getShellColor();
+    System.out.println("Name: " + adam.getName());
+    System.out.println("Color (RGB): (" + adamColor.getRed() + ", " + adamColor.getGreen() + ", " + adamColor.getBlue() + ")");
+    System.out.println("Shape drawn: star");
+    System.out.println("Distance from (0,0): ", adam.getDistance(0, 0));
+    System.out.println();
 
   
     // //world.setVisible(true);
