@@ -33,6 +33,11 @@ public class Main {
     
 
     yertle. polygon(5.0, 100);
+    marc.circle(70); 
+    adam.star(5, 110);
+    jenny.heart(80);
+
+
 
     System.out.print(yertle.getName());
     System.out.print(marc.getName());

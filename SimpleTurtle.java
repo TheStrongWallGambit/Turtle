@@ -706,6 +706,24 @@ public class SimpleTurtle
       this.turn(10);
     }
   }
+
+  public static void arc(int chord, int degrees) {
+    for (int i = 0; i < degrees / 5; i++) {
+      this.forward(chord);
+      this.turn(5); 
+      }
+  }
+
+  public static void heart(int size) {
+    int chord = Math.max(2, (int) Math.round(size / 18.0));
+    int leg = chord * 18;              // must derive leg FROM chord
+    this.turn(90);
+    this.turn(-140);
+    this.forward(leg);
+    arc(chord, 200);
+    this.turn(-120);
+    arc(chord, 200);
+    this.forward(leg);
   
   /**
    * Method to return a string with informaiton 
