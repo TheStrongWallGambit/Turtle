@@ -1,6 +1,6 @@
 import java.awt.*;
 import java.awt.geom.*;
-import java.swing.*;
+import javax.swing.*;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;

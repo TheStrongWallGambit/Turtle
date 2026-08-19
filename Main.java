@@ -16,6 +16,11 @@ public class Main {
 
     Turtle adam = new Turtle(600, 600, world);
     // // Add your code here
+    yertle.setName("Yertle");
+    marc.setName("Marc");
+    jenny.setName("Jenny"); 
+    adam.setName("Adam");
+  
     yertle.setShellColor(Color.black);
     yertle.setPenColor(Color.green);
     marc.setShellColor(Color.blue);
